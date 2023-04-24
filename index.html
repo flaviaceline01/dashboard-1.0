@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Tech</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+            <img src="LOGO.png" height="30">
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <div class="user">
+        <img src="xolo-icon.png" alt="" class="user-img">
+        <div>
+            <p class="bold">Xolo Maridueña</p>
+            <p>Suporte de T.I</p>
+        </div>
+    </div>
+    <ul>
+        <li>
+            <!--icons retirados do site:https://boxicons.com/-->
+            <a href="#">
+                <i class='bx bxs-home'></i>
+                <span class="nav-item">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-grid-alt'></i>
+                <span class="nav-item">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-time-five'></i>
+                <span class="nav-item">Horários</span>
+            </a>
+            <span class="tooltip">Quadro de Horários</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-happy' ></i>
+                <span class="nav-item">Pesquisa</span>
+            </a>
+            <span class="tooltip">Pesquisa de Satisfação</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-heart'></i>
+                <span class="nav-item">Consultas</span>
+            </a>
+            <span class="tooltip">Consultas</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-log-out'></i>
+                <span class="nav-item">Logout</span>
+            </a>
+            <span class="tooltip">Logout</span>
+            </li>
+    </ul>
+</div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Olá, Xolo!</h1>
+            <div class="hero">
+                <div class="conteudo">
+                    <h1>Delta Tech</h1>
+                    <p>Sua <span>Jornada</span> começa aqui!</p>
+                    <button>Explore</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+
+<script>
+    let btn =document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+</script>
+
+</html>
