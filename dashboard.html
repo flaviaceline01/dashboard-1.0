@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Tech - Dashboard</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    
+
+<div class="header">
+    <div class="logo"></div> <img src="LOGO.png" weight 30px; height="30px">
+</div>
+
+
+<div class="sidebar">
+    <div class="top">
+        <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <div class="user">
+        <img src="xolo-icon.png" alt="" class="user-img">
+        <div>
+            <p class="bold">Xolo Maridueña</p>
+            <p>Dev Front-End</p>
+        </div>
+    </div>
+    <ul>
+        <li>
+            <!--Side menu padrão-->
+            <!--icons retirados do site:https://boxicons.com/-->
+            <a href="index.html">
+                <i class='bx bxs-home'></i>
+                <span class="nav-item">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+        </li>
+        <li>
+            <a href="dashboard.html">
+                <i class='bx bxs-grid-alt'></i>
+                <span class="nav-item">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-time-five'></i>
+                <span class="nav-item">Horários</span>
+            </a>
+            <span class="tooltip">Horários</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-happy' ></i>
+                <span class="nav-item">Pesquisa</span>
+            </a>
+            <span class="tooltip">Pesquisa</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-heart'></i>
+                <span class="nav-item">Consultas</span>
+            </a>
+            <span class="tooltip">Consultas</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-log-out'></i>
+                <span class="nav-item">Logout</span>
+            </a>
+            <span class="tooltip">Logout</span>
+            </li>
+    </ul>
+</div>
+    <div class="main-content">
+    <div class="content">
+        <div class="titulo-section">
+            <h1>Dashboard</h1>
+            <br/>
+            <div class="separator"></div>
+            <p><i class='bx bxs-home'></i> / Veja as informações de sua conta aqui!</p>
+        </div>
+        <!--linha que separa-->
+        <div class="divisoria">
+           
+            <!--Todas as divs dos respectivos cards-->
+            <div class="container1">
+                <div class="cards1">
+                    <p class="title1">Lembrete</p>
+                    <div class="cards1-hidden">
+                        <p class="title1-in">Lembretes</p>
+                        <p>Anote aqui seus compromissos e obrigações.</p>
+                        <a style="color: #000;"  class="button1">Open</a>
+                    </div>
+          
+                </div>
+                <div class="cards1-border"></div>
+            </div>
+
+            <div class="container2">
+                <div class="cards2">
+                    <p class="title">Projetos</p>
+                    <div class="cards2-hidden">
+                        <p class="title-in">Projetos Realizados</p>
+                        <p>Principais projetos realizados na empresa.</p>
+                        <a style="color: #000;" class="button2">Open</a>
+                    </div>
+          
+                </div>
+                <div class="cards2-border"></div>
+            </div>
+
+            <div class="container3">
+                <div class="cards3">
+                    <p class="title3">Clientes</p>
+                    <div class="cards3-hidden">
+                        <p class="title-in3">Lista de contato dos clientes</p>
+                        <p>Seus contatos aqui.</p>
+                        <a style="color: #000;"  class="button3">Open</a>
+                    </div>
+          
+                </div>
+                <div class="cards3-border"></div>
+            </div>
+            <!--Gráfico de hard skill-->
+            <div class="skill-h">
+                <div class="card">
+                    <div class="header">My Skills</div>
+                    <div class="body">
+                      <div class="skill">
+                        <div class="skill-name">HTML</div>
+                        <div class="skill-level">
+                          <div class="skill-percent" style="width: 80%"></div>
+                        </div>
+                        <div class="skill-percent-number">80%</div>
+                      </div>
+                      <div class="skill">
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-level">
+                          <div class="skill-percent" style="width: 90%"></div>
+                        </div>
+                        <div class="skill-percent-number">90%</div>
+                      </div>
+                      <div class="skill">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-level">
+                          <div class="skill-percent" style="width: 15%"></div>
+                        </div>
+                        <div class="skill-percent-number">15%</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js"></script>
+
+<script>
+    let btn =document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+</script>
+
+</html>
+
+<!--Projetos, tarefas-->

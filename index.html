@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta Tech</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Delta Tech - Home</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--acesso aos icons-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
 
+<div class="header">
+    <div class="logo"></div> <img src="LOGO.png" weight 30px; height="30px">
+</div>
+
+<!--topo com foto e profissão-->
 <div class="sidebar">
     <div class="top">
-        <div class="logo">
-            <img src="LOGO.png" height="30">
-        </div>
         <i class="bx bx-menu" id="btn"></i>
     </div>
     <div class="user">
@@ -29,53 +31,53 @@
         <li>
             <!--icons retirados do site:https://boxicons.com/-->
             <a href="#">
-                <i class='bx bxs-home'></i>
-                <span class="nav-item">Home</span>
+                <i class='bx bxs-home'></i> <!--icon-->
+                <span class="nav-item">Home</span> <!--nome da aba-->
             </a>
-            <span class="tooltip">Home</span>
+            <span class="tooltip">Home</span> <!--nome da aba quando o menu estiver escondido-->
+        </li>
+        <li>
+            <a href="dashboard.html">
+                <i class='bx bxs-grid-alt'></i> <!--icon-->
+                <span class="nav-item">Dashboard</span> <!--nome da aba-->
+            </a>
+            <span class="tooltip">Dashboard</span> <!--nome da aba quando o menu estiver escondido-->
         </li>
         <li>
             <a href="#">
-                <i class='bx bxs-grid-alt'></i>
-                <span class="nav-item">Dashboard</span>
+                <i class='bx bx-time-five'></i> <!--icon-->
+                <span class="nav-item">Horários</span> <!--nome da aba-->
             </a>
-            <span class="tooltip">Dashboard</span>
+            <span class="tooltip">Horários</span> <!--nome da aba quando o menu estiver escondido-->
         </li>
         <li>
             <a href="#">
-                <i class='bx bx-time-five'></i>
-                <span class="nav-item">Horários</span>
+                <i class='bx bxs-happy' ></i> <!--icon-->
+                <span class="nav-item">Pesquisa</span> <!--nome da aba-->
             </a>
-            <span class="tooltip">Quadro de Horários</span>
+            <span class="tooltip">Pesquisa</span> <!--nome da aba quando o menu estiver escondido-->
         </li>
         <li>
             <a href="#">
-                <i class='bx bxs-happy' ></i>
-                <span class="nav-item">Pesquisa</span>
+                <i class='bx bxs-heart'></i> <!--icon-->
+                <span class="nav-item">Consultas</span> <!--nome da aba-->
             </a>
-            <span class="tooltip">Pesquisa de Satisfação</span>
+            <span class="tooltip">Consultas</span> <!--nome da aba quando o menu estiver escondido-->
         </li>
         <li>
             <a href="#">
-                <i class='bx bxs-heart'></i>
-                <span class="nav-item">Consultas</span>
+                <i class='bx bxs-log-out'></i> <!--icon-->
+                <span class="nav-item">Logout</span> <!--nome da aba-->
             </a>
-            <span class="tooltip">Consultas</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class='bx bxs-log-out'></i>
-                <span class="nav-item">Logout</span>
-            </a>
-            <span class="tooltip">Logout</span>
+            <span class="tooltip">Logout</span> <!--nome da aba quando o menu estiver escondido-->
             </li>
     </ul>
 </div>
 
     <div class="main-content">
         <div class="container">
-            <h1>Olá, Xolo!</h1>
-            <div class="hero">
+            <h1>Olá, Xolo!</h1> <!--título quando abrir o site-->
+            <div class="hero"> <!---->
                 <div class="conteudo">
                     <h1>Delta Tech</h1>
                     <p>Sua <span>Jornada</span> começa aqui!</p>
@@ -87,9 +89,12 @@
     </div>
 
 </body>
-
+<!--Sair do elemento de tag body, porém dentro do arquivo HTML-->
+<!--Maneira de pegar o botão de menu-->
+<!--Selecionar o side bar-->
+<!--Função que ao btn ser clicado vai esconder ou aparecer o menu-->
 <script>
-    let btn =document.querySelector('#btn')
+    let btn =document.querySelector('#btn') 
     let sidebar = document.querySelector('.sidebar')
 
     btn.onclick = function () {

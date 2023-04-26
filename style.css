@@ -7,6 +7,16 @@
     font-family: 'Poppins';
 }
 
+.header {
+    background: linear-gradient(to right, #000000, #23452c, #41A55B);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    color: white;
+}
+
 .user-img {
     width: 50px;
     border-radius: 100%;
@@ -48,28 +58,10 @@
     left: 90%;
 }
 
-.sidebar .top .logo {
-    display: flex;
-    height: 50px;
-    width: 100%;
-    align-items: center;
-    pointer-events: none;
-    opacity: 0;
-}
-
-.sidebar.active .top .logo {
-    opacity: 1;
-}
-
-.top .logo i {
-    font-size: 2rem;
-    margin-right: 5px;
-}
-
 .user {
     display: flex;
     align-items: center;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .user p {
@@ -126,7 +118,7 @@
 .sidebar.active .nav-item {
     opacity: 1;
 }
-
+/*nome que aparece quando o side bar estiver escondido*/
 .sidebar ul li .tooltip {
     position: absolute;
     left: 125px;
@@ -159,7 +151,7 @@
     padding: 1rem;
 }
 
-
+/*classe do container que fica no centro*/
 .main-content .hero {
     height: 70vh;
     padding: 0 5%;
@@ -183,7 +175,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    border: 2px solid #000;
+    border: 2px solid #41A55B;
     padding: 14px  40px;
     border-radius: 50px;
     margin-top: 20px;
